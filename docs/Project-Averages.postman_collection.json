@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "c22798d6-bb2b-4290-bb73-b26edd4c8b36",
+		"name": "Project-Averages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10343507"
+	},
+	"item": [
+		{
+			"name": "media",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value1\": 9,\r\n    \"value2\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/average",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"average"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "media ponderada",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value1\": 10,\r\n    \"value2\": 6,\r\n    \"peso1\": 1,\r\n    \"peso2\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/weighted-average",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weighted-average"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mediana",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value1\": [1,30,20,15]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/median",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"median"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
