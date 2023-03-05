@@ -7,7 +7,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func (as *AverageServer) Mediana(ctx *fiber.Ctx) (err error) {
+func (as *AverageServer) Median(ctx *fiber.Ctx) (err error) {
 	body := &api.CreateMedian{}
 
 	ctx.BodyParser(body)

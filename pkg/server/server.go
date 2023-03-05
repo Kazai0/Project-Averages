@@ -18,10 +18,7 @@ func Run(as *AverageServer) {
 	as.app.Use(cors.New())
 
 	as.app.Post("/average", as.Average)
-
 	as.app.Post("/weighted-average", as.WeightedAverage)
-
-	as.app.Post("/median", as.Mediana)
-
+	as.app.Post("/median", as.Median)
 	as.app.Listen(":3000")
 }
