@@ -12,7 +12,7 @@ type AverageServer struct {
 func Run(as *AverageServer) {
 
 	as.app = fiber.New(fiber.Config{
-		AppName: "Analysis",
+		AppName: "average",
 	})
 
 	as.app.Use(cors.New())
